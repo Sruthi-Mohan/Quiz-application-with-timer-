@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="user-form-container">
+    <h2>Enter Your Details</h2>
+    <form id="user-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="tel" id="mobile" placeholder="Mobile" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="college" placeholder="College" required />
+      <input type="text" id="degree" placeholder="Degree" required />
+      <input type="text" id="specialization" placeholder="Specialization" required />
+      <input type="text" id="year" placeholder="Year of Study" required />
+      <button type="submit" class="btn sky-blue">Start Quiz</button>
+    </form>
+  </div>
+
+  <div id="quiz-container" class="hidden">
+    <div id="timer">25:00</div>
+    <div id="question-number"></div>
+    <div id="question-text"></div>
+    <div id="options"></div>
+    <div class="navigation-buttons">
+      <button id="prev-btn" class="btn pink hidden">Previous</button>
+      <button id="next-btn" class="btn pink">Next</button>
+      <button id="review-btn" class="btn mixed hidden">Review</button>
+      <button id="submit-btn" class="btn sky-blue hidden">Submit</button>
+    </div>
+  </div>
+
+  <div id="review-container" class="hidden">
+    <h2>Review Your Answers</h2>
+    <div id="review-list"></div>
+    <button id="final-submit-btn" class="btn sky-blue">Final Submit</button>
+  </div>
+
+  <div id="result-container" class="hidden">
+    <h2>Thank you for taking up the quiz!</h2>
+    <div id="result-list"></div>
+    <p>Your Score: <span id="score"></span>/25</p>
+    <button id="download-pdf" class="btn sky-blue">Download as PDF</button>
+    <button id="download-excel" class="btn sky-blue">Export to Excel</button>
+    <button id="retake-quiz" class="btn sky-blue">Retake Quiz</button>
+    <h3>High Score Board</h3>
+    <ul id="high-score-board"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
